@@ -8,3 +8,6 @@ git add
 
 git commit -m ""
 
+git remote add origin "location of remote repo"
+
+git push -u origin master
