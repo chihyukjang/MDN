@@ -1,0 +1,87 @@
+HTML Structure
+------------------------
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+  </body>
+</html>
+------------------------
+Adding an author and description
+<meta name="author" content="Chris Mills">
+<meta name="description" content="The MDN Web Docs Learning Area aims to provide
+complete beginners to the Web with all they need to know to get
+started with developing web sites and applications.">
+------------------------
+Other types of metadata - Open Graph Data, Twitter
+<meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+<meta property="og:description" content="The Mozilla Developer Network (MDN) provides
+information about Open Web technologies including HTML, CSS, and APIs for both Web sites
+and HTML5 Apps. It also documents Mozilla products, like Firefox OS.">
+<meta property="og:title" content="Mozilla Developer Network">
+<meta name="twitter:title" content="Mozilla Developer Network">
+------------------------
+Adding custom icons to your site
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+------------------------
+Applying CSS and JavaScript to HTML
+<link rel="stylesheet" href="my-css-file.css">
+<script src="my-js-file.js" defer></script>
+------------------------
+Preferably, you should use a single <h1> per page—this is the top level heading, 
+and all others sit below this in the hierarchy.
+------------------------
+<h1> heading
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+<p> paragraph
+<ul> unordered list
+<ol> ordered list
+<em> italic - emphasis * <i> is another way but old style (use css instead without affecting)
+<strong> bold - emphasis * <b> is another way but old style (use css instead without affecting)
+<u> - underline * this is an old style and will affect SEO so use css instead
+**It's best to underline only links**
+------------------------
+Adding supporting information with the title attribute
+<p>I'm creating a link to
+<a href="https://www.mozilla.org/en-US/"
+   title="The best place to find more information about Mozilla's
+          mission and how to contribute">the Mozilla homepage</a>.
+</p>
+------------------------
+Block level links
+<a href="https://www.mozilla.org/en-US/">
+  <img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage">
+</a>
+------------------------
+Same directory
+<p>Want to contact a specific staff member?
+Find details on our <a href="contacts.html">contacts page</a>.</p>
+Moving down into subdirectories
+<p>Visit my <a href="projects/index.html">project homepage</a>.</p>
+Moving back up into parent directories
+<p>A link to my <a href="../pdfs/project-brief.pdf">project brief</a>.</p>
+------------------------
+Document fragments
+<h2 id="Mailing_address">Mailing address</h2>
+<p>Want to write us a letter? Use our <a href="contacts.html#Mailing_address">mailing address</a>.</p>
+<p>The <a href="#Mailing_address">company mailing address</a> can be found at the bottom of this page.</p>
+------------------------
+Always use relative links instead of absolute links for efficiency
+Absolute link: https://www.example.com/projects/pdfs/project-brief.pdf
+Relative link: project-brief.pdf
+
+------------------------
+
+------------------------
+
+------------------------
+
+------------------------
