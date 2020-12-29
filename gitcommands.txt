@@ -1,12 +1,42 @@
-git command
+git command v0.0.1
 
+#After installing git, log in
+git config --global user.name
+git config --global user.email
+
+# make your current directory to git's default directory
 git init
 
+# show recent changes 
 git status
 
-git add        
+# add all files
+git add -A        
 
+# send files and messages
 git commit -m ""
+
+# show list of sent files
+git log
+
+# restore system from git save
+git reset 000000 --hard
+
+# revert some settings, pick one from the most recent save
+git revert 000000
+
+# when you don't want to change the original files but desire to test some new things
+git branch alpha
+git branch
+git chechout my-idea
+
+# bring your work to the master branch
+git checkout master
+git mergy alpha
+:wq
+
+# decorate git log
+git log --grahp --all --decorate
 
 git remote add origin "location of remote repo"
 
