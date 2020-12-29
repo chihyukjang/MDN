@@ -38,6 +38,9 @@ git mergy alpha
 # decorate git log
 git log --grahp --all --decorate
 
+# simplify source tree, show as one line
+git rebase master
+
 git remote add origin "location of remote repo"
 
 git push -u origin master
