@@ -1,12 +1,26 @@
-git command
+git command v0.0.1
 
+#After installing git, log in
+git config --global user.name
+git config --global user.email
+
+# make your current directory to git's default directory
 git init
 
+# show recent changes 
 git status
 
+# add untracked files
 git add        
 
+# send files and messages
 git commit -m ""
+
+# show list of sent files
+git log
+
+# restore system from git repo
+git reset 00000a --hard
 
 git remote add origin "location of remote repo"
 
