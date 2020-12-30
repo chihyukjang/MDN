@@ -44,9 +44,29 @@ git rebase master
 # check git remote
 git remote
 
-
 # add remote github user
 git remote add origin https://github.com/chihyukjang/MDN
 
 # push changed files from git to github
 git push -u origin master
+git push origin beta
+
+# download saves new files from others
+git fetch
+git pull origin master
+
+# create branch and checkout
+git checkout -b beta
+
+# show local and remote branches
+git branch -a
+
+# create a branch and pull saves
+git checkout -b beta origin/beta
+
+# delete local branch
+git branch -D beta
+
+# delete remote branch
+git push -d origin beta
+
